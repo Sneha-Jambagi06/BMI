@@ -1,4 +1,10 @@
 weight=float(input("Enter the weight :"))
-height=float(input("Enter the height :"))
+eight=float(input("Enter the height :"))
 bmi=weight/(height**2)
-print("BMI:",round(bmi,1))
+if bmi<18.5:
+    c="Underweight"
+elif bmi<25:
+    c="Normal"
+else:
+    c="Overweight"
+print(f"BMI:{round(bmi,1)} Category:{c}")
